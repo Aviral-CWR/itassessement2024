@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Augment Your PC</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2a2f33;
+      color: #ffffff;
+      animation: fadeIn 1.5s ease-in forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 5px;
+      padding: 0;
+      display: flex;
+      background-color: #063a52;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #4b6b7e;
+      border-radius: 13px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0bc4ff;
+      margin-bottom: 30px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background-color: #3a3f45;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(11, 196, 255, 0.4);
+    }
+
+    .service-box img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .service-box h3 {
+      margin-top: 10px;
+      color: #ffcc00;
+      font-size: 1.2em;
+    }
+
+    .service-box p {
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #d0d0d0;
+    }
+
+    .service-box a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background-color: #0bc4ff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .service-box a:hover {
+      background-color: #0999c8;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 0;
+      padding: 10px;
+      font-size: 0.9em;
+      background-color: #6b92a5;
+      border-top: 1px solid #ffffff;
+      color: #fff;
+    }
+
+    footer a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <img src="all iamges/custom pc bild.avif" alt="Build Icon">
+        <h3>🔧 Custom PC Builds</h3>
+        <p>We craft custom PCs tailored to your needs — gaming, content creation, or workstation use — using the latest components.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+
+      <div class="service-box">
+        <img src="all iamges/hardware upgrades.jpg" alt="Upgrade Icon">
+        <h3>💡 Hardware Upgrades</h3>
+        <p>Need more speed or graphics power? We'll help you upgrade CPUs, GPUs, RAM, and storage the right way.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+
+      <div class="service-box">
+        <img src="all iamges/pc optimization.png" alt="Optimization Icon">
+        <h3>⚙️ Optimization</h3>
+        <p>Boost performance with BIOS tuning, driver updates, airflow balancing, and thermal management.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+
+      <div class="service-box">
+        <img src="all iamges/pc cleaning.avif" alt="Cleaning Icon">
+        <h3>🧼 PC Cleaning</h3>
+        <p>Physical & internal cleaning service to ensure dust-free, smooth performance and longevity of your system.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+
+      <div class="service-box">
+        <img src="all iamges/setup.jpeg" alt="Software Icon">
+        <h3>📦 Software Setup</h3>
+        <p>We install and configure operating systems, drivers, essential apps, and even game libraries for you.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+
+      <div class="service-box">
+        <img src="all iamges/troubleshoot.webp" alt="Support Icon">
+        <h3>🛠️ Troubleshooting</h3>
+        <p>Having issues? We'll diagnose and fix hardware or software problems with professional care.</p>
+        <a href="contact.html">Book Now</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Augment Your PC | Sinamangal, Kathmandu |
+    <a href="mailto:sabiral24@tbc.edu.np">sabiral24@tbc.edu.np</a></p>
+  </footer>
+</body>
+</html>

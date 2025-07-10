@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Augment Your PC</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2a2f33;
+      color: #215963;
+      animation: fadeIn 1.5s ease-in forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin: 30px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 5px;
+      padding: 0;
+      display: flex;
+      background-color: #063a52;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #4b6b7e;
+      border-radius: 13px;
+    }
+
+    .pc-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .pc-card {
+      position: relative;
+      background-color: #024252;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .pc-card:hover {
+      transform: scale(1.05);
+    }
+
+    .pc-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .pc-overlay{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      overflow-y: auto;;
+    }
+
+    .pc-card:hover .pc-overlay {
+      opacity: 1;
+    }
+
+    .pc-overlay h3{
+     margin-top: 0;
+      font-size: 1.5em;
+    }
+
+    .pc-overlay ul{
+      margin: 10px 0;
+      font-size: 0.9em;
+    }
+
+    .pc-overlay .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ffcc00;
+      font-size: 1.2em;
+    }
+
+
+    footer {
+      text-align: center;
+      margin-top: 550px;
+    }
+
+    footer p {
+      margin: 0;
+      padding: 10px;
+      font-size: 0.9em;
+      background-color: #6b92a5;
+      border-top: 1px solid #ffffff;
+      color: #fff;
+    }
+
+    footer a {
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>PC Build Showcase Gallery 💻</h2>
+
+    <div class="pc-gallery">
+            <a href="specs-shadowbolt.html" class="pc-card">
+        <img src="all iamges/shadowbolt.avif" alt="Shadow Bolt v1">
+        <div class="pc-overlay">
+          <h3>Shadow Bolt v1</h3>
+          <ul>
+            <li>Ryzen 5 5500</li>
+            <li>RX 6600</li>
+            <li>16GB DDR4</li>
+            <li>512GB SSD</li>
+            <li>Air Cooling</li>
+          </ul>
+          <div class="price">NPR 119,999</div>
+        </div>
+      </a>
+
+      <a href="specs-earthshield.html" class="pc-card">
+        <img src="all iamges/earth shield.avif" alt="Earth Shield">
+        <div class="pc-overlay">
+          <h3>Earth Shield</h3>
+          <ul>
+            <li>Ryzen 5 5600</li>
+            <li>RX 7600</li>
+            <li>16GB DDR4</li>
+            <li>1TB NVMe SSD</li>
+            <li>Air Cooling</li>
+          </ul>
+          <div class="price">NPR 154,999</div>
+        </div>
+      </a>
+
+      <a href="specs-lightwell.html" class="pc-card">
+        <img src="all iamges/lightwell.avif" alt="Lightwell">
+        <div class="pc-overlay">
+          <h3>Lightwell</h3>
+          <ul>
+            <li>Ryzen 5 7600X</li>
+            <li>RX 7600</li>
+            <li>32GB DDR5</li>
+            <li>1TB NVMe SSD</li>
+            <li>Custom Water Cooling</li>
+          </ul>
+          <div class="price">NPR 189,999</div>
+        </div>
+      </a>
+
+      <a href="specs-warmachine.html" class="pc-card">
+        <img src="all iamges/war machine.avif" alt="War Machine">
+        <div class="pc-overlay">
+          <h3>War Machine</h3>
+          <ul>
+            <li>Ryzen 5 7600</li>
+            <li>RX 7700 XT</li>
+            <li>32GB DDR5</li>
+            <li>2TB NVMe SSD</li>
+            <li>Liquid Cooling</li>
+          </ul>
+          <div class="price">NPR 224,999</div>
+        </div>
+      </a>
+
+      <a href="specs-tranquility.html" class="pc-card">
+        <img src="all iamges/tranquility.avif" alt="Tranquility">
+        <div class="pc-overlay">
+          <h3>Tranquility</h3>
+          <ul>
+            <li>Ryzen 5 9600X</li>
+            <li>RX 7800 XT</li>
+            <li>32GB DDR5</li>
+            <li>2TB NVMe SSD</li>
+            <li>Custom Water Cooling</li>
+          </ul>
+          <div class="price">NPR 269,999</div>
+        </div>
+      </a>
+
+      <a href="specs-bloodboil.html" class="pc-card">
+        <img src="all iamges/blood boil.avif" alt="Blood Boil">
+        <div class="pc-overlay">
+          <h3>Blood Boil</h3>
+          <ul>
+            <li>Ryzen 7 9800X3D</li>
+            <li>RX 7900 XT</li>
+            <li>64GB DDR5</li>
+            <li>4TB NVMe SSD</li>
+            <li>Advanced Water Cooling</li>
+          </ul>
+          <div class="price">NPR 349,999</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Augment Your PC | Sinamangal, Kathmandu |
+    <a href="mailto:sabiral24@tbc.edu.np">sabiral24@tbc.edu.np</a></p>
+  </footer>
+</body>
+</html>
